@@ -1,0 +1,16 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Bubble Sort's Ω(n) is much faster than its O(n²).
+This can be seen in the time difference between the worst cases (random/reverse50000.txt), where the average time is approximately 6 seconds; and the best case (organized50000.txt),where the average time is approximately 0.7 seconds.
+
+sort2 uses: Merge Sort
+
+How do you know?: Merge Sort has Theta θ(n × log n) which means the same performance in the best or worst case. This can be seen in the time taken to sort the 50000.txt models, where the average time is approximately 0.75 seconds.
+This, alone, is not enough to determine the method of sorting. As part of the conclusion, the average time of sort2 (until then, supposed Merge Sort) was compared with the average time of sort3 (supposed Selection Sort by elimination), in which sort2 had a better performace.
+So then, it is possible to conclude sort2 as Merge Sort, since it has θ(n log n); which is much faster than Selection Sort, which has θ(n²).
+
+sort3 uses: Selection Sort
+
+How do you know?: Merge Sort has Theta θ(n²) which means the same performance in the best or worst case. This can be seen in the time taken to sort the 50000.txt models, where the average time is approximately 3.5 seconds.
+As said in the conclusion of sort2, sort3 was compared with sort2, and it was proven to perform worse in the tests performed.
+Based on the fact that selection Sort has θ(n²), while merge sort has θ(n log n), it is possible to say that sort3 uses Selection Sort
