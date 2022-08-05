@@ -1,0 +1,291 @@
+/* color palete: #060606 #5b2b12 #1a2840 #052619 #ada471 #cacaa5 */
+html
+{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body
+{
+    position: relative;
+    margin: 0;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    background-image: url('media/harvard-shelf.jpg');
+    background-position: 50% 70%;
+    width: 100%;
+    background-size: 100%;
+    min-height: 100%;
+    box-sizing: inherit;
+    padding-bottom: 8rem
+}
+
+/* Navigation bar */
+.navbar
+{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #060606;
+    overflow: hidden;
+}
+
+.nav-logo
+{
+    color: white;
+    float: left;
+    margin-left: 2%;
+}
+
+.nav-logo img
+{
+    vertical-align: middle;
+    width: 40px;
+    height: auto;
+}
+
+.nav-right
+{
+    float: right;
+    margin-right: 2%;
+}
+
+.nav-right li
+{
+    display: inline;
+    margin: 1vw;
+}
+
+/* links */
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited
+{
+    color: lightgrey
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+/* Footer */
+footer
+{
+    background-color: #5b2b12;
+    height: auto;
+    font-size: 0.8rem;
+    margin-top: auto;
+    position : absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-content div
+{
+    width: 100%;
+    margin: auto;
+}
+
+.footer-links
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.footer-links li
+{
+    margin: 0 10px;
+}
+
+.footer-bottom
+{
+    background-color: #1a2840;
+    height: auto;
+    display: flex;
+    font-weight: 200;
+    font-size: 0.7rem;
+}
+
+#left-footer-p
+{
+    text-align: left;
+    margin: 0.5rem auto 0.5rem 1rem;
+}
+
+#right-footer-p
+{
+    text-align: right;
+    margin: 0.5rem 1rem 0.5rem auto;
+}
+
+/* Index.html main content*/
+.text-background
+{
+    position: relative;
+    width: 100%;
+    background-color: rgba(6, 6, 6, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 1vh;
+}
+
+.home-content
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 1ex;
+    padding-bottom: 1ex;
+}
+
+.home-content h1, h2, p, li
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Contact.html main content */
+.container
+{
+    margin: 3% 10% 3% 10%;
+    border-style: solid;
+    border-color: #060606;
+    border-width: medium;
+    border-radius: 5px;
+    background-color: rgba(10, 16, 25, 0.9);
+}
+
+form
+{
+    padding: 10px;
+}
+
+form input
+{
+    border-style: solid;
+    border-color: #060606;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 4px;
+    width: 20vw;
+}
+
+.input-group
+{
+    margin: 20px 10px
+}
+
+#label-right
+{
+    margin-left: 10vw
+}
+
+#fcontent
+{
+    margin-left: 0;
+    padding-right: 50%;
+    padding-bottom: 50vh;
+}
+
+#form-button
+{
+    color: white;
+    background-color: #5b2b12;
+    padding: 10px 30px;
+    border-style: solid;
+    border-color: #060606;
+    border-width: 2px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer
+}
+
+/* about.html main content */
+#title1
+{
+    margin-bottom: 50px;
+}
+
+hr
+{
+    border-style: solid;
+    width: 15vw;
+    margin: 3ch 12%
+}
+
+/* Buttons */
+.center-btn
+{
+    text-align: center;
+}
+.btn1
+{
+    background: #060606;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px 3rem;
+}
+
+/* tictactoe.html */
+section
+{
+    text-align: center;
+}
+
+.game--container
+{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 10px auto;
+    background-color: #1a2840;
+    color: white;
+}
+
+.cell
+{
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 2px 2px #060606;
+    border: 2px solid #5b2b12;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.game--status
+{
+    font-size: 50px;
+    color: white;
+    margin: 20px auto;
+}
+
+.game--restart
+{
+    background-color: #1a2840;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px #060606;
+    border: 2px solid #5b2b12;
+}

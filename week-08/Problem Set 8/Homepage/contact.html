@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Linking files css and js -->
+        <link href="styles.css" rel="stylesheet">
+        <script src="scripts.js"></script>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;500;700&display=swap" rel="stylesheet">
+
+        <title>CS50 W8 - My Webpage - Email form</title>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="media/cs50-duck.png" alt="cs50 yellow duck">
+                <span>CS50</span>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main content (Form) -->
+        <div class="text-background home-content">
+            <h1>Email contact</h1>
+        </div>
+        <div class="container">
+            <form action="mailto:davialvessampaio00@gmail.com" method="POST" name="contact-form" enctype="multipart/form-data" id="email-form">
+                <div class="input-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                    <label id="label-right" for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                </div>
+                <div class="input-group">
+                    <label for="fsubject">Subject</label>
+                    <input type="text" id="fsubject" name="subject" placeholder="Subject...">
+                </div>
+                <div class="input-group">
+                    <label for="fcontent">Content</label>
+                    <br>
+                    <input type="text" id="fcontent" name="content" placeholder="Content...">
+                </div>
+                <button type="submit" form="email-form" value="submit" id="form-button">SUBMIT EMAIL</button>
+            </form>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div>
+                    <h2>Social Media</h2>
+                    <ul class="footer-links">
+                        <li><a href="https://www.instagram.com/davi_sampaio0/">Instagram</a></li>
+                        <li><a href="https://github.com/Davi-S">Github</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>CS50</h2>
+                    <ul class="footer-links">
+                        <li><a href="https://cs50.harvard.edu/x/2022/">CS50 2022</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="left-footer-p">Created at 02/08/2022 - Brasil</p>
+                <p id="right-footer-p">Copyright © 2022 by Davi A. Sampaio. Designed and Written by Davi A. Sampaio</p>
+            </div>
+        </footer>
+    </body>
+</html>
