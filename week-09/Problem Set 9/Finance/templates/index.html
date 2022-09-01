@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <h1>Portifolio</h1>
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price for share</th>
+            <th>Total share price</th>
+        </tr>
+        {% for stock in wallet %}
+            <tr>
+                <td>{{ stock['symbol']}}</td>
+                <td>{{ stock['shares']}}</td>
+                <td>{{ stock['price_fs'] | usd }}</td>
+                <td>{{ stock['price_ts'] | usd }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <p></p>
+    <table>
+        <tr>
+            <th>Total price</th>
+            <td>{{ total_price | usd }}</td>
+        </tr>
+        <tr>
+            <th>Cash available</th>
+            <td>{{ cash_available | usd }}</td>
+        </tr>
+        <tr>
+            <th>TOTAL LIQUID BALANCE</th>
+            <td>{{ total_balance | usd }}</td>
+        </tr>
+    </table>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My account
+{% endblock %}
+
+{% block main %}
+    <h1>Account</h1>
+    <p>Accont configuration and options</p>
+    <br>
+    <h2>Add cash</h2>
+    <p>Add more cash to your account</p>
+    <form action="/add_cash" method="post">
+        <div class="mb-3">
+            <input required autocomplete="off" autofocus class="form-control mx-auto w-auto" name="cash_amount" placeholder="Amount" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Add cash</button>
+    </form>
+    <br>
+    <h3>Change password</h3>
+    <p>Change your account password</p>
+    <form action="/change_password" method="post">
+        <div class="mb-3">
+            <input required autocomplete="off" autofocus class="form-control mx-auto w-auto" name="old_password" placeholder="Old password" type="password">
+            <input required autocomplete="off" autofocus class="form-control mx-auto w-auto" name="new_password" placeholder="New password" type="password">
+            <input required autocomplete="off" autofocus class="form-control mx-auto w-auto" name="confirm_new_password" placeholder="Confirm New password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Change password</button>
+    </form>
+{% endblock %}
